@@ -27,7 +27,7 @@ reactionTimeout = setTimeout(() => {
 } 
 
 function handleButtonClick(event) {
-    if (event.target) === activeButton {
+    if (event.target === activeButton) {
         clearTimeout(reactionTimeout);
         score += 1;
         updateScore();

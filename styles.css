@@ -1,12 +1,29 @@
 body {
-    background: #ff6347; /* Highlighted color */
+    background: slateblue /* Highlighted color */
 }
 .active {
     background-color: red;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
 }
 .inactive{
     display: flex;
     width: 200px;
     height: 200px;
     background-color: gray;
+}
+#margin1{
+    width: 40px;
+    height: 40px;
+}
+#margin2{
+    width: 40px;
+    height: 40px;
+}
+#margin3{
+    width: 40px;
+    height: 40px;
 }

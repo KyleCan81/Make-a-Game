@@ -1,5 +1,9 @@
 const buttons = document.querySelectorAll('.game-button');
 const scoreDisplay = document.getElementById('score');
+const b1 = document.getElementById('button1');
+const b2 = document.getElementById('button2');
+const b3 = document.getElementById('button3');
+const b4 = document.getElementById('button4');
 let score = 0;
 let activeButton = null;
 let reactionTimeout;
@@ -47,5 +51,13 @@ function clearActiveButton() {
 function updateScore() {
     scoreDisplay.innerText = `Score: ${score}`;
 }
+
+b1.addEventListener('click', e=> {
+    if (b1.className != "active"){
+        scoreDisplay = scoreDisplay - 1;
+        document.getElementById('scoreDsiplay').textContent = scoreDisplay;
+    }
+
+})
 
 startGame();
